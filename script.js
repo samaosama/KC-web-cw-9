@@ -25,6 +25,6 @@ function load() {
   container.innerHTML = "";
   // طبّق الخطوة 6 تحت هذا الكومنت
   orders.forEach((item) => {
-    `<div><h1>${item.name} - ${item.id}</h1><h3>${item.order}</h3></div>`;
+    container.innerHTML += `<div><h1>${item.name} - ${item.id}</h1><h3>${item.order}</h3></div>`;
   });
 }
